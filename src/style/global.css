@@ -1,7 +1,187 @@
-:root{
+:root {
     --verde: #7f8a52;
     --amarelo: #f8b026;
     --vermelho: #a12521;
     --laranja: #ca4613;
     --creme: #f7e0a9;
+}
+
+/* fontes */
+span,
+p,
+a,
+li {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+/* titulos */
+h1,
+h2,
+h3 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--creme);
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 800;
+}
+
+header nav span{
+    text-decoration: none;
+    color: var(--verde);
+    font-weight: 800;
+}
+
+header nav ul li a:hover {
+    color: var(--laranja);
+}
+
+/* menu mobile */
+
+.menu-hamburguer {
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1000;
+    gap: 3px;
+}
+
+.menu-hamburguer span {
+    background-color: var(--laranja);
+    border-radius: 10px;
+    transition: 0.3s;
+    height: 30px;
+    width: 1005;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* responsividade */
+@media (max-width: 768px) {
+    header {
+        position: relative;
+    }
+
+    #nossos-cookies {
+        display: none !important;
+    }
+
+    .menu-hamburguer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1002;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        z-index: 1000;
+        gap: 3px;
+    }
+
+    .menu-hamburguer span {
+        background-color: var(--amarelo);
+        border-radius: 10px;
+        transition: 0.3s;
+        height: 30px;
+        width: 1005;
+    }
+
+    nav {
+        display: none !important;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--creme);
+        flex-direction: column;
+        padding: 20px;
+        z-index: 1001;
+    }
+
+    /*força a exibição quando tiver a classe active*/
+    nav.active {
+        display: flex !important;
+    }
+
+    nav .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* transformar em X */
+    .open span:nth-child(1) {
+        transform: rotate (45deg) translate(5px, 5px);
+    }
+
+    .open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .open span:nth-child(3) {
+        transform: rotate (-45deg) translate(5px, 5px);
+    }
+
+    #footer-content {
+        flex-direction: column;
+    }
+
+    #img-footer {
+        background-color: url("/src/assets/ilu-footer-mobile.svg");
+    }
 }
