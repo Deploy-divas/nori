@@ -1,6 +1,5 @@
 /* estilização da página inicial */
-
-#cta{
+.section-cta{
     width: 70%;
     height: auto;
     padding: 2rem 1rem;
@@ -8,7 +7,17 @@
     justify-content: center;
 }
 
-#image-cta{
+.section {
+    width: 70%;
+    height: auto;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    justify-content: center;
+}
+
+#img-cta{
     width: 50%;
     height: 25rem;
 }
@@ -18,4 +27,16 @@
     align-items: center;
     gap: 2rem;
     margin: 2rem 0;
+}
+
+#img-sobre{
+    width: 100%;
+    height: 25rem;
+}
+
+#text-sobre{
+    text-align: start;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
 }
