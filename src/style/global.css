@@ -149,6 +149,7 @@ main {
         width: 100%;
         background: var(--creme);
         flex-direction: column;
+        align-items: center;
         padding: 20px;
         z-index: 1001;
     }
@@ -156,6 +157,7 @@ main {
     /*força a exibição quando tiver a classe active*/
     nav.active {
         display: flex !important;
+        padding: 0;
     }
 
     nav .nav-list {
@@ -166,7 +168,7 @@ main {
 
     /* transformar em X */
     .open span:nth-child(1) {
-        transform: rotate (45deg) translate(5px, 5px);
+        transform: rotate(45deg) translate(3px, 3px);
     }
 
     .open span:nth-child(2) {
@@ -174,7 +176,7 @@ main {
     }
 
     .open span:nth-child(3) {
-        transform: rotate (-45deg) translate(5px, 5px);
+        transform: rotate(-45deg) translate(10px, -10px);
     }
 
     #footer-content {
