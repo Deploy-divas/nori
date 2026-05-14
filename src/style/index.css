@@ -1,0 +1,21 @@
+/* estilização da página inicial */
+
+#cta{
+    width: 70%;
+    height: auto;
+    padding: 2rem 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-cta{
+    width: 50%;
+    height: 25rem;
+}
+
+#text-cta{
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}

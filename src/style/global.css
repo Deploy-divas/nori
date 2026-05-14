@@ -4,6 +4,7 @@
     --vermelho: #a12521;
     --laranja: #ca4613;
     --creme: #f7e0a9;
+    --branco: #fff;
 }
 
 /* fontes */
@@ -121,6 +122,15 @@ main {
   flex-direction: column;
 }
 
+.btn-default{
+    background-color: var(--vermelho);
+    border: none;
+    padding:  1rem 2rem;
+    border-radius: 0.5rem;
+    color: var(--branco);
+    font-weight: bold;
+}
+
 footer {
   background-color: var(--vermelho);
   width: 100%;
@@ -136,6 +146,7 @@ footer {
 #footer-content {
   width: 90%;
   justify-content: space-between;
+  color: var(--branco);
 }
 
 #footer-nav {
