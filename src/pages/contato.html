@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,10 @@
     <!-- fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <header>
@@ -25,7 +28,7 @@
                 <span>Nori</span>
             </div>
             <ul class="nav-list">
-                <li><a href="/src/pages/index.html">Início</a></li>
+                <li><a href="/index.html">Início</a></li>
                 <li><a href="/src/pages/portfolio.html">Portfólio</a></li>
                 <li><a href="/src/pages/sobre.html">Sobre</a></li>
                 <li><a href="/src/pages/contato.html">Contato</a></li>
@@ -34,40 +37,48 @@
     </header>
 
     <main>
-        
+        <h1>Fale Conosco</h1>
+        <section id="section-form" class="flex-col gap-2">
+            <label for="nome">Nome</label>
+            <input name="nome" type="text" placeholder="Digite o seu nome completo" />
+            <input name="numeroTelefone" type="tel" placeholder="Digite seu número de celular para retornarmos" />
+            <textarea id="mensagemUsuario" name="mensagem" rows="4" cols="50" placeholder="Escreva aqui a sua mensagem">
+            </textarea>
+        </section>
     </main>
 
     <footer id="footer" class="flex-col">
-      <div id="img-footer">
-        
-      </div>
-      <section id="footer-content" class="flex-col">
-        <div id="footer-logo">
-            <span>Nori</span>
+        <div id="img-footer">
+
         </div>
-          <div id="footer-nav" class="flex-row">
-            
-          <ul class="flex-row">
-            <li><a href="">
-                <img src="/src/assets/whatsapp.svg" alt="">
-            </a></li>
-            <li><a href="">
-                <img src="/src/assets/instagram.svg" alt="">
-            </a></li>
-            <li><a href="">
-                <img src="/src/assets/twitter.svg" alt="">
-            </a></li>
-          </ul>
-          <ul class="flex-row">
-            <li>Início</li>
-            <li>Sobre</li>
-            <li>Portfólio</li>
-            <li>Contato</li>
-          </ul>
-        </div>
-      </section>
-      <div id="footer-commercial"></div>
+        <section id="footer-content" class="flex-col">
+            <div id="footer-logo">
+                <span>Nori</span>
+            </div>
+            <div id="footer-nav" class="flex-row">
+
+                <ul class="flex-row">
+                    <li><a href="">
+                            <img src="/src/assets/whatsapp.svg" alt="">
+                        </a></li>
+                    <li><a href="">
+                            <img src="/src/assets/instagram.svg" alt="">
+                        </a></li>
+                    <li><a href="">
+                            <img src="/src/assets/twitter.svg" alt="">
+                        </a></li>
+                </ul>
+                <ul class="flex-row">
+                    <li>Início</li>
+                    <li>Sobre</li>
+                    <li>Portfólio</li>
+                    <li>Contato</li>
+                </ul>
+            </div>
+        </section>
+        <div id="footer-commercial"></div>
     </footer>
-    
+
 </body>
+
 </html>
