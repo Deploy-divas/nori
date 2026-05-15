@@ -124,6 +124,7 @@ main {
 .gap-4{
     gap: 2rem;
 }
+
 .gap-6{
     gap: 3rem;
 }
@@ -208,6 +209,18 @@ footer {
   background-color: var(--vermelho);
   width: 100%;
   height: auto;
+}
+
+footer a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 800;
+}
+footer a:hover{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 800;
+    color: var(--creme)
 }
 
 #img-footer {
