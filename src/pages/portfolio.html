@@ -1,68 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nori | Portfólio</title>
+
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/portfolio.css">
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="imagex/png" href="../assets/favicon.ico">
+
 </head>
+
 <body>
 
     <header>
-            <div class="menu-hamburguer" id="menu-icone">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="menu-hamburguer" id="menu-icone">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Menu para mobile -->
+        <nav>
+            <div id="logo">
+                <span>Nori</span>
             </div>
-            <!-- Menu para mobile -->
-            <nav>
-                <div id="logo">
-                    <span>Nori</span>
+            <ul class="nav-list">
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/src/pages/portfolio.html">Portfólio</a></li>
+                <li><a href="/src/pages/sobre.html">Sobre</a></li>
+                <li><a href="/src/pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="mais-vendidos">
+            <div class="section-title flex-col">
+                <h2 class="fonte-vermelha">Mais procurados</h2>
+            </div>
+            <div class="section">
+                <div class="card flex-col">
+                    <div class="card-img">
+                        <img class="card-img" src="/src/assets/guioza.png" alt="Guioza de carne do Nori">
+                    </div>
+                    <div class="card-body flex-col">
+                        <h3 class="fonte-vermelha">Guioza de carne</h3>
+                        <p>Dumplings dourados e suculentos, recheados com carne e vegetais selecionados.</p>
+                        <button class="card-button">Ver mais</button>
+                    </div>
                 </div>
-                <ul class="nav-list">
-                    <li><a href="/src/pages/index.html">Início</a></li>
-                    <li><a href="/src/pages/portfolio.html">Portfólio</a></li>
+                <div class="card flex-col">
+                    <div class="card-img">
+                        <img class="card-img" src="/src/assets/onigiri.jpg" alt="Onigiri de atum do Nori">
+                    </div>
+                    <div class="card-body flex-col">
+                        <h3 class="fonte-vermelha">Onigiri de atum</h3>
+                        <p>Bolinho de arroz recheado e envolto em alga e com recheio de atum, simples e delicioso.</p>
+                        <button class="card-button">Ver mais</button>
+                    </div>
+                </div>
+                <div class="card flex-col">
+                    <div class="card-img">
+                        <img class="card-img" src="/src/assets/ramen.jpg" alt="Ramen do Nori">
+                    </div>
+                    <div class="card-body flex-col">
+                        <h3 class="fonte-vermelha">Rámen</h3>
+                        <p>Sopa japonesa rica e reconfortante, com caldo saboroso e acompanhamentos frescos.</p>
+                        <button class="card-button">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="mais-vendidos">
+            <div class="section-title flex-col">
+                <h2 class="fonte-vermelha">Sushibar</h2>
+            </div>
+            <div class="section">
+                <div class="card flex-col">
+                    <div class="card-img">
+                        <img class="card-img" src="/src/assets/guioza.png" alt="Ramen do Nori">
+                    </div>
+                    <div class="card-body flex-col">
+                        <h3 class="fonte-vermelha">Niguiri</h3>
+                        <p>Arroz delicadamente moldado com fatia de peixe fresco por cima.</p>
+                        <button class="card-button">Ver mais</button>
+                    </div>
+                </div>
+                <div class="card flex-col">
+                    <div class="card-img">
+                        <img class="card-img" src="/src/assets/onigiri.jpg" alt="Ramen do Nori">
+                    </div>
+                    <div class="card-body flex-col">
+                        <h3 class="fonte-vermelha">Urumaki</h3>
+                        <p>Rolinho invertido com arroz por fora e recheios irresistíveis por dentro.</p>
+                        <button class="card-button">Ver mais</button>
+                    </div>
+                </div>
+                <div class="card flex-col">
+                    <div class="card-img">
+                        <img class="card-img" src="/src/assets/ramen.jpg" alt="Ramen do Nori">
+                    </div>
+                    <div class="card-body flex-col">
+                        <h3 class="fonte-vermelha">Hosomaki</h3>
+                        <p>Sushi fino e elegante, perfeito para quem aprecia sabores clássicos.</p>
+                        <button class="card-button">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mais-vendidos">
+            <div class="section-title flex-col">
+                <h2 class="fonte-vermelha">Sobremesas</h2>
+            </div>
+            <div class="section">
+                <div class="card flex-col">
+                    <div class="card-img">
+                        <img class="card-img" src="/src/assets/guioza.png" alt="Ramen do Nori">
+                    </div>
+                    <div class="card-body flex-col">
+                        <h3 class="fonte-vermelha">Mochi</h3>
+                        <p>Bolinho de arroz macio e recheado, doce na medida certa.</p>
+                        <button class="card-button">Ver mais</button>
+                    </div>
+                </div>
+                <div class="card flex-col">
+                    <div class="card-img">
+                        <img class="card-img" src="/src/assets/onigiri.jpg" alt="Ramen do Nori">
+                    </div>
+                    <div class="card-body flex-col">
+                        <h3 class="fonte-vermelha">Dango</h3>
+                        <p>Espetinho de bolinhas de arroz levemente adocicadas, tradicional e divertido.</p>
+                        <button class="card-button">Ver mais</button>
+                    </div>
+                </div>
+                <div class="card flex-col">
+                    <div class="card-img">
+                        <img class="card-img" src="/src/assets/ramen.jpg" alt="Ramen do Nori">
+                    </div>
+                    <div class="card-body flex-col">
+                        <h3 class="fonte-vermelha">Taiyaki</h3>
+                        <p>Waffle japonês em formato de peixe, recheado com creme ou doce de feijão.</p>
+                        <button class="card-button">Ver mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="flex-col">
+        <div id="img-footer">
+
+        </div>
+        <section id="footer-content" class="flex-col">
+            <div id="footer-logo">
+                <span>Nori</span>
+            </div>
+            <div id="footer-nav" class="flex-row">
+
+                <ul class="flex-row">
+                    <li><a href="">
+                            <img src="/src/assets/whatsapp.svg" alt="">
+                        </a></li>
+                    <li><a href="">
+                            <img src="/src/assets/instagram.svg" alt="">
+                        </a></li>
+                    <li><a href="">
+                            <img src="/src/assets/twitter.svg" alt="">
+                        </a></li>
+                </ul>
+                <ul class="flex-row">
+                    <li><a href="/index.html">Início</a></li>
                     <li><a href="/src/pages/sobre.html">Sobre</a></li>
+                    <li><a href="/src/pages/portfolio.html">Portfólio</a></li>
                     <li><a href="/src/pages/contato.html">Contato</a></li>
                 </ul>
-            </nav>
-        </header>
-
-        <main>
-
-        </main>
-
-        <footer id="footer" class="flex-col">
-            <div id="img-footer">
-
             </div>
-            <section id="footer-content" class="flex-col">
-                <div id="footer-logo">
-                    <span>Nori</span>
-                </div>
-                <div id="footer-nav" class="flex-row">
+        </section>
+        <div id="footer-commercial"></div>
+    </footer>
 
-                    <ul class="flex-row">
-                        <li><a href="">
-                                <img src="/src/assets/whatsapp.svg" alt="">
-                            </a></li>
-                        <li><a href="">
-                                <img src="/src/assets/instagram.svg" alt="">
-                            </a></li>
-                        <li><a href="">
-                                <img src="/src/assets/twitter.svg" alt="">
-                            </a></li>
-                    </ul>
-                    <ul class="flex-row">
-                        <li><a href="/index.html">Início</a></li>
-                        <li><a href="/src/pages/sobre.html">Sobre</a></li>
-                        <li><a href="/src/pages/portfolio.html">Portfólio</a></li>
-                        <li><a href="/src/pages/contato.html">Contato</a></li>
-                    </ul>
-                </div>
-            </section>
-            <div id="footer-commercial"></div>
-        </footer>
 
-    
 </body>
+
 </html>
