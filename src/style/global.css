@@ -7,6 +7,10 @@
     --branco: #fff;
 }
 
+img{
+    object-fit: cover;
+}
+
 /* fontes */
 span,
 label,
