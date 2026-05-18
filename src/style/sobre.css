@@ -1,0 +1,27 @@
+.titulo-sobre{
+    font-size: 75px;
+    text-align: center;
+    color: var(--vermelho);
+}
+
+.subtitulo-sobre{
+    font-size: 24px;
+    text-align: center;
+    color: var(--amarelo);
+    margin: 20px;
+}
+
+.img-sobre{
+    width: 70%;
+    height: 300px;
+    border-radius: 1rem;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.paragrafo-sobre{
+    font-size: 20px;
+    text-align: center;
+    color: var(--preto);
+    line-height: 1.5;
+}
