@@ -11,6 +11,7 @@ img{
     object-fit: cover;
 }
 
+
 /* fontes */
 span,
 label,
@@ -281,10 +282,26 @@ footer a:hover {
 }
 
 #img-footer {
-    height: 16rem;
+    height: auto;
     width: auto;
-    background-image: url("/src/assets/ilu-footer-desktop.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("/src/assets/ilu-footer-desktop.svg"); */
 }
+
+
+#logo-nori-footer{
+    width: 40%;
+    margin: 30px;
+}
+
+#logo-nori-menu{
+    width: 100px;
+    margin: 10px;
+}
+
+
 
 #footer-content {
     width: 90%;
@@ -388,6 +405,6 @@ footer a:hover {
     }
 
     #img-footer {
-        background-image: url("/src/assets/ilu-footer-mobile.svg");
+        /* background-image: url("/src/assets/ilu-footer-mobile.svg"); */
     }
 }
